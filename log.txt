@@ -1,0 +1,32 @@
+programming/designing single target IAT (ST-IAT) using r package iatgen
+=================================================
+
+=================================================
+...
+
+
+=================================================
+2018-10-19
+
+- Created "HOW-TO-program-stiat.txt" file with steps on creating custom ST-IAT using iatgen:writeSCIATfull()
+- Created first version of my custom ST-IAT 
+- Exported to .qsf
+
+
+=================================================
+2018-10-18
+
+- Moved practice blocks to a new survey; and added logic; so that works
+- Now I need to fix the instructions/slide numbering on the slides in such a way that it all makes sense with the practice blocks in there.
+	- e.g., "1 of 4" and "...just like the last task"
+
+
+=================================================
+2018-10-15
+
+- I'm going to try and run an entire test IAT from scratch; then my plan is to:
+	(1) Look at the data to see how easily interpretable it is; I don't anticipate much/any problem here;
+	(2) See if I can eventually "steal" a single IAT block AS PRACTICE and place it into a new (i.e., the real) ST-IAT survey
+		- This may be harder.
+		
+- 

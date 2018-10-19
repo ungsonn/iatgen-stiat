@@ -1,0 +1,16 @@
+<div class="instruct" id="instructions">
+<p>Continue the task as you were completing it just before. The label/item colors may help you identify the appropriate category.
+<br>
+<br>
+Use the <span style="font-weight: bold">E</span> key for the category/categories on the left and the <span style="font-weight: bold">I</span> key for the category/categories on the right. Again, try to go as fast as possible without making mistakes. Correct errors by hitting the other key. 
+<br>
+<br>
+When you are ready, please press the [Space] bar to begin.
+<br>
+<br>
+Part 3 of 5</p>
+</div>
+<p class="note" id="note"></p>
+</div>
+
+<div style="opacity: 0; font-size:300px; color:#fff;"><p>x</p></div>

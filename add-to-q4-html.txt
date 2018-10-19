@@ -1,0 +1,13 @@
+<div class="instruct" id="instructions">
+<p>Please continue the task as you were just doing it. Again, try to go <i>as fast as possible</i> without making mistakes.  Correct errors by hitting the other key.
+<br>
+<br>
+When you are ready, please press the [Space] bar to begin.
+<br>
+<br>
+Part 5 of 5</p>
+</div>
+<p class="note" id="note"></p>
+</div>
+
+<div style="opacity: 0; font-size:300px; color:#fff;"><p>x</p></div>

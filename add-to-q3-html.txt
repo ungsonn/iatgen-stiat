@@ -1,0 +1,16 @@
+<div class="instruct" id="instructions">
+<p></b>Attention!</b> Notice that one of the categories has switched sides, but the rules remain the same.
+<br>
+<br>
+Please practice this new configuration now. Remember to try to go as <em>fast as you can</em> while making as few errors as possible. Correct errors by hitting the other key. 
+<br>
+<br>
+When you are ready, please press the [Space] bar to begin.
+<br>
+<br>
+Part 4 of 5</p>
+</div>
+<p class="note" id="note"></p>
+</div>
+
+<div style="opacity: 0; font-size:300px; color:#fff;"><p>x</p></div>
