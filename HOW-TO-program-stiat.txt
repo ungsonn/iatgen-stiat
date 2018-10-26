@@ -22,3 +22,12 @@ Steps to using iatgen:writeSCIATfull() to create single-target IAT with training
 	<div class="instruct" id="instructions">
 
 (5) Modify "pre-IAT" content in Qualtrics (e.g., with instructions, etc.)
+(6) Modify Block names
+	- Training Blocks
+	- IAT 1 - Compatible First [Target A on RIGHT with POS]
+	- IAT 2 - Incompatible First [Target A on LEFT with NEG]
+	- IAT 3 - Compatible First [Target A on LEFT with POS]
+	- IAT 4 - Incompatible First [Target A on RIGHT with NEG]
+(7) Modify Question names
+	- e.g., for "IAT 1 - Compatible First [Target A on RIGHT with POS]", 
+		- "Q1 RP1", "Q2 RP2",...

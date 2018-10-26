@@ -1,42 +1,50 @@
+# Analyzing ST-IAT Data
+
+
+# {setup} -----------------------------------------------------------------
+
 library(iatgen)
+library(tidyverse)
+
+
+# import and tidy ---------------------------------------------------------
 
 # import data
-# caution: iatgen may have altered wd()
-data <- read.csv("White_STIAT_test_data.csv", header = TRUE)
+data <- read.csv("stiat_Chelsea_FC.csv", header = TRUE)
 
-#data2 <- read.csv("White_STIAT_test_data_nonleg.csv", header = TRUE)
- 
+# remove first row
+data <- data[-1, ]
+
+# clean up
+#data <- data %>% 
+#  select(12:29, 
+#         start = V8, 
+#         end = V9)
 
 #### IAT 1
 
 ### Collapse  IAT critical blocks  down ####
 
 # This should include the critical blocks from each of the 4 permutations
-# RP, RN, LP, LN
-data$compatible.crit.1 <- combineIATfourblocks(data$Q5.RN1, data$Q6.RN2, data$Q7.RN3, data$Q8.RN4)
 
-data$incompatible.crit.1 <- combineIATfourblocks(dat$Q96, dat$Q98, dat$Q104, dat$Q106)
+data$compatible.crit <- combineIATfourblocks(data$Q2.RP2, data$Q8.LN4, data$Q10.LP2, data$Q16.RN4)
 
+data$incompatible.crit <- combineIATfourblocks(data$Q4.RP4, data$Q6.LN2, data$Q12.LP4, data$Q14.RN2)
 
-
-# test unstring
-test1 <- unlist(strsplit(as.character(data[2, 17]), ","))
-test2 <- unlist(strsplit(as.character(data[2, 18]), ","))
-test3 <- unlist(strsplit(as.character(data[2, 19]), ","))
-test4 <- unlist(strsplit(as.character(data[2, 20]), ","))
-
- 
 
 ### Collapse  IAT practice blocks ####
 
-dat$compatible.prac.1 <- combineIATfourblocks(dat$Q93, dat$Q99, dat$Q101, dat$Q107)
+data$compatible.prac <- combineIATfourblocks(data$Q1.RP1, data$Q7.LN3, data$Q9.LP1, data$Q15.RN3)
 
-dat$incompatible.prac.1 <- combineIATfourblocks(dat$Q95, dat$Q97, dat$Q103, dat$Q105)
+data$incompatible.prac <- combineIATfourblocks(data$Q3.RP3, data$Q5.LN1, data$Q11.LP3, data$Q13.RN1)
 
- 
+
 
 ### Clean the IAT ###
 
 ## D-BUILT.IN: USE THIS IF FORCED ERROR CORRECTION WAS ENABLED PER GREENWALD ET AL 2003
 
-clean.1 <- cleanIAT(dat$compatible.prac.1, dat$compatible.crit.1, dat$incompatible.prac.1, dat$incompatible.crit.1, error.penalty = FALSE)
+clean <- cleanIAT(data$compatible.prac, data$compatible.crit, data$incompatible.prac, data$incompatible.crit, error.penalty = FALSE)
+
+# Return D value only...
+cleanIAT(data$compatible.prac, data$compatible.crit, data$incompatible.prac, data$incompatible.crit, error.penalty = FALSE)$D
