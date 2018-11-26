@@ -34,3 +34,9 @@ Initial code for develping ST-IAT obtained from [Dr. Tom Carpenter](http://spu.e
 
 7. **Modify Question names**
     * e.g., for "IAT 1 - Compatible First [Target A on RIGHT with POS]": "Q1 RP1", "Q2 RP2",...
+	
+	
+# IMPORTANT
+
+* Make sure that you are using the "Minimal 2014" Qualtrics theme with NO PAGE TRANSITIONS.
+* If you import any IAT blocks into another survey, make sure to "keep export tags" and also make sure to re-insert page breaks between different IAT blocks (i.e., questions within Qualtrics blocks)
