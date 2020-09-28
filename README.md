@@ -40,3 +40,4 @@ Initial code for develping ST-IAT obtained from [Dr. Tom Carpenter](http://spu.e
 
 * Make sure that you are using the "Minimal 2014" Qualtrics theme with NO PAGE TRANSITIONS.
 * If you import any IAT blocks into another survey, make sure to "keep export tags" and also make sure to re-insert page breaks between different IAT blocks (i.e., questions within Qualtrics blocks)
+* Data must be download as a .csv from Qualtrics in LEGACY FORMAT. 
